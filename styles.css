@@ -57,23 +57,28 @@ body {
 
 /* Carousel Styling */
 .carousel-container {
-  margin: 40px auto;
-  overflow: hidden; /* Hide overflow from carousel items */
+  margin: 60px auto;
+  overflow: hidden;
   width: 100%;
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 10px;
+  gap: 20px;
   max-width: 100%;
 }
 
 .carousel-item img {
   width: 407px;
   height: 474px;
-  object-fit: cover; /* Ensures the image fits properly */
+  object-fit: cover;
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.03);
 }
 
 .carousel-item p {
@@ -133,6 +138,11 @@ body {
   width: 100%;
   height: auto;
   box-shadow: 0 0.5px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+  transform: scale(1.03);
 }
 
 .product-name {
